@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* tipografia */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2em;
+}
+}h3 {
+    font-size: 1.5em;
+}
+p {
+    margin-bottom: 15px;
+}
+ul {
+    margin-bottom: 15px;
+    list-style: none;
+}
+li {
+    margin-bottom: 5px;
+}
+
+/* Navigazione */
+.navbar {
+    height: auto;
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+    margin-bottom: 40px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    width: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .container  {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .nav-brand {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+/* Intestazione */
+.header-wrapper {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Contenuto principale */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.leftbar, .rightbar, .main-content {
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .content-wrapper .leftbar,
+    .content-wrapper .rightbar {
+        display: none;
+
+    }
+}
+/* Tabelle */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-responsive th,
+.table-responsive td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.table-responsive th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.table-responsive tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.table-responsive tr:hover {
+    background-color: #e9e9e9;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}

@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Template HTML responsive riutilizzabile">
+    <meta name="author" content="pianic2">
+
     <title>Template HTML Responsive</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Navigation -->
+    <!-- Barra di navigazione -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <h1>Logo</h1>
+                <h1>NavBar</h1>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#table-responsive">Tabella</a></li>
+                <li><a href="#additional-paragraphs">Paragrafi</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Header -->
+    <!-- Intestazione -->
     <header class="header">
         <div class="container">
-            <h1>Benvenuto nel Template Responsive</h1>
-            <p>Un template HTML/CSS moderno e completamente responsive</p>
+            <div class="header-wrapper">
+                <h1>Benvenuto nel Template Responsive</h1>
+                <p>Un template HTML/CSS moderno e completamente responsive</p>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
+    <!-- Contenuto Principale -->
+    <main class="">
         <div class="container">
             <div class="content-wrapper">
                 <!-- Left Sidebar -->
@@ -51,13 +57,15 @@
                 </aside>
 
                 <!-- Main Content Area -->
-                <section class="content">
-                    <article>
-                        <h2>Contenuto Principale</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                        
+                <section class="content main-content">
+                    <h2>Contenuto Principale</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris.</p>
+
+                    <article id="table-responsive">
                         <h3>Tabella Responsive</h3>
-                        <div class="table-wrapper">
+                        <div class="table-responsive">
                             <table>
                                 <thead>
                                     <tr>
@@ -89,10 +97,16 @@
                                 </tbody>
                             </table>
                         </div>
+                    </article>
 
+                    <article id="additional-paragraphs">
                         <h3>Paragrafi Aggiuntivi</h3>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
                     </article>
                 </section>
 
@@ -123,29 +137,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Informazioni</h3>
-                    <p>Template HTML responsive creato per progetti web moderni.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Link Rapidi</h3>
-                    <ul>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#terms">Termini e Condizioni</a></li>
-                        <li><a href="#sitemap">Mappa del Sito</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contatti</h3>
-                    <p>Email: info@example.com</p>
-                    <p>Tel: +39 123 456 7890</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Template Responsive. Tutti i diritti riservati.</p>
-            </div>
+            <p>&copy; 2026 Template Responsive. Tutti i diritti riservati.</p>
         </div>
     </footer>
 </body>
+
 </html>
