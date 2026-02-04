@@ -1,0 +1,65 @@
+/**
+ * Layout System
+ * Container, grid layout e struttura responsive
+ */
+
+/* ===================================
+   Container
+   =================================== */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  width: 100%;
+}
+
+/* ===================================
+   Content Wrapper con Named Grid Areas
+   =================================== */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: var(--grid-columns-desktop);
+  grid-template-areas: "leftbar main rightbar";
+  gap: var(--gap-base);
+  padding: var(--gap-base) 0;
+}
+
+/* Grid Area Assignments */
+.leftbar {
+  grid-area: leftbar;
+}
+
+.main-content {
+  grid-area: main;
+}
+
+.rightbar {
+  grid-area: rightbar;
+}
+
+/* ===================================
+   Responsive Layout
+   =================================== */
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    grid-template-columns: var(--grid-columns-mobile);
+    grid-template-areas:
+      "main"
+      "leftbar"
+      "rightbar";
+  }
+}
+
+/* Supporto per layout flessibili */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
